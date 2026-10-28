@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fff7fa;
+    color: #5f4b55;
+    line-height: 1.6;
+}
+
+
+
+header {
+    background: linear-gradient(135deg, #f8c8dc, #f5d9e6);
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #8a5269;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #9b6b7d;
+    margin-bottom: 25px;
+}
+
+
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9c5f78;
+    font-weight: 600;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d36b98;
+}
+
+
+/* ===== REMOVE HTML LINES ===== */
+
+hr {
+    display: none;
+}
+
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(180, 120, 145, 0.12);
+}
+
+section h2 {
+    color: #c06088;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+section h3 {
+    color: #8f6375;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+
+/* ===== DASHBOARD ===== */
+
+#home {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #fff0f5
+    );
+}
+
+#home ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#home li {
+    flex: 1;
+
+    background-color: #fce1eb;
+    color: #8b5269;
+
+    padding: 22px 15px;
+
+    border-radius: 15px;
+
+    text-align: center;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#home li:hover {
+    transform: translateY(-5px);
+    background-color: #f8ccdc;
+}
+
+
+/* ===== ABOUT ME ===== */
+
+#about p {
+    color: #705b64;
+}
+
+
+/* ===== SKILLS ===== */
+
+#skills ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+#skills li {
+    background-color: #fbe4ed;
+    color: #a25575;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    background-color: #f5c8da;
+    transform: translateY(-2px);
+}
+
+
+/* ===== CONTACT FORM ===== */
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    color: #8b5c70;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    border: 1px solid #f1c5d6;
+
+    background-color: #fffafb;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d982a6;
+
+    box-shadow:
+        0 0 0 3px #fce4ed;
+}
+
+
+/* ===== BUTTON ===== */
+
+button {
+    background-color: #d982a6;
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #bd678a;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+
+    background-color: #f6d6e2;
+    color: #8c6071;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* ===== MOBILE / SMALL SCREEN ===== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    #home ul {
+        flex-direction: column;
+    }
+
+    main {
+        width: 92%;
+    }
+}
